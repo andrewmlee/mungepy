@@ -39,9 +39,31 @@ We use the fillmode() function fills in NaN values with the mode for a given col
 
 ```
 df = dataframe
-fillmode(df['column_name'])
-``` 
+fillmode(df['column_name']) 
+```
+### Describing Data
 
+**describemore()**
+
+The describemore() feature is very similar to the describe() function in pandas but it give more information, including median and mode.
+
+```
+df = dataframe
+descrbemore(df['column_name'])
+```
+
+```
+Count    9
+Mean     3.0
+Median   3.0
+Mode     3.0
+Std      1.9364916731037085
+Min      1.0
+25%      1
+50%      3
+75%      5
+Max      6.0
+```
 
 
 
