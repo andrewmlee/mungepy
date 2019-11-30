@@ -1,4 +1,5 @@
 import pandas as pd
+import re
 
 # Filling NaN Values
 
@@ -47,5 +48,15 @@ def describemore(data):
     print('75%      ' + str(threequarters))
     print('Max      ' + str(maximum))
 
+# Removing Special Characters
+
+def rm_special(data):
+    result = []
+    for value in data:
+        value = value.strip()
+        value = re.sub('[!@#$%^&*()`~?/<>{}|]','', value)
+        result.append(value)
+    return result
+    
 
 
