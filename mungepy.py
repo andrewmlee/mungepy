@@ -14,6 +14,13 @@ def fillmean(data):
     mean = data.mean()
     data.fillna(mean, inplace = True)
 
+def fillzero(data):
+    data.fillna(0, inplace = True)
+
+def fillone(data):
+    data.fillna(1, inplace = True)
+
+
 # Describing Data
 
 def describemore(data):
